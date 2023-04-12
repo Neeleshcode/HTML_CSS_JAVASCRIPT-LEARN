@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!-- Doctype --information about the page  -->
+<html>
+  <!-- html is the root element -->
+<head>
+  <!--head-- to specify the top level things -->
+  <!-- title--specifies the title of the page  -->
+<title>HTML learning</title>
+<!-- external style sheet-->
+<!-- 1.not mixing our html  and css code ,2.readibility improves ,3.improve usability -->
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Internal styling -->
+<!-- It is also not recommended as it decrease the readibility of the code and mixes css with html -->
+<style>
+  h1{
+    color: brown;
+  }
+</style>
+</head>
+<body>
+  <!-- Heading -->
+  <!-- inline style sheet example -->
+  <!-- style ="property Name : property value"-->
+  <!-- 1. As it mixes with html code 2. changing styling at many different place and more repeatative code -->
+<!--<h1 >Heading 1</h1>
+<h2 style="color: blue">Heading 2</h2>
+<h3 style="color: blue">Heading 3</h3>
+<h4 >Heading 4</h4>
+<h5>Heading 5</h5> -->
+<!-- selectors 2 types- id selector and second class selector -->
+<!-- <h6 class="error">Heading 6</h6> -->
+
+<h1>Css Text</h1>
+<h2 class="font-styles">CSS texttt</h2>
+<div class="orange">background orange</div>
+<span class="yellow">background yellow</span>
+
+<!-- Paragraph -->
+<p id="text">This is a Paragraph</p>
+<!-- for Displaying element ,usually starts from the next line -->
+<!-- Lorem30 -->
+<!-- br --is braek tag for line -->
+
+<!-- Text Formating -->
+
+<!-- strong --used for making text bold ,this is used to add importance to the tag-->
+<!-- em emphasis and i tag is used for making text italic  -->
+<!-- small--used to define smaller text -->
+<!-- mark tag-- is used to highlight the text -->
+<!-- delete tag --stripe through the line -->
+<!-- ins tag --used to underline the text -->
+<!-- sub --for subscript text -->
+<!-- sup for superscript text -->
+
+<p>Lorem ipsum dolor <strong>sit amet consectetur</strong> sit amet <ins>adipisicing </ins> elit. <mark>Temporibus earum commodi</mark> repudiandae  inventore <br/>
+  quia sed distinctio<i>minus sapiente necessitatibus</i>  
+  at error eveniet<small>incidunt id exercitationem</small> <del> autem aut tenetur itaque fugit!</del>
+Lorem ipsum dolor sit <sub>amet consectetur adipisicing elit. Sint</sub> placeat quasi sapiente eveniet id corporis<br/>s
+ saepe dolorum quia aut<sup> sit quaerat alias perferendis ex</sup>, eligendi pariatur, quibusdam impedit culpa. Similique.
+</p>
+
+<!-- Block and inline display -->
+<!-- block level element always takes up the new line an take the full width available -->
+<!-- inline element doesnt take a new line and take as much width available -->
+<div class="box-model">CSS Box Model</div>
+<div>BLock2</div>
+<h2>Cascade</h2>
+<h3 class="sub-heading" id="title" style="color: purple">Specificity</h3>
+
+<!-- Inheritance -->
+<!-- some css property values set on parents elements are inherited by there child elements, and some are not.-->
+
+<div class="Inheritance">
+  <p>Inheritance</p>
+</div>
+
+<!-- Now paragraph have inherited the properties of a div element i.e of the parent-->
+
+<span>Inline1</span>
+<span>Inline2</span>
+
+
+
+<!-- Display Properties -->
+<!--<div class="content-1">Sample Content1</div>
+<span class="content-2">Sample content-2</span> -->
+
+<!-- Properties -->
+<!-- 1.Static
+2.Relative 
+3.fixed -->
+<div class="Position-1">Position Content 1</div>
+<div class="container">
+  <!-- however if the element has a d/f parent element with a relative position, then the position will then be relative to the parent element-->
+  <div class="Position-2">Position Content 2</div>
+</div>
+
+
+<!-- Relative--- An element is set to be relative is position relative to its normal position. -->
+<!-- fixed--when we want the element to be fixed at a particular place ex--submit form button,chat bot -->
+
+
+
+
+
+<!-- List level elements -->
+<!-- unordered list--ul -->
+<!-- ol--ordered list -->
+<ul>
+  <li>red</li>
+  <li>blue</li>
+  <li>green</li>
+</ul>
+<ol>
+  <li>GBU</li>
+  <li>Gate no 5</li>
+  <li>Rahim hostel</li>
+</ol>
+
+<!-- description list --description of each term-->
+<!-- dl--defination list tag,dt--description defination,dd--description data -->
+<dl>
+  <dt>Ice cream </dt>
+  <dd>A soft cold food</dd>
+</dl>
+<dl>
+  <dt>Ice cream </dt>
+  <dd>A soft cold food</dd>
+</dl>
+
+
+<!-- html attributes ,table ,form-->
+<!-- htm attribute ---provide some additional information about the element -->
+<img src="chirag.png" height="200" width="200" alt="public"/>
+
+<!-- tag for linking different pages anchor tag -- -->
+<!-- target attribute is used to redirect to the different tab -->
+
+<a href="https://google.com" target="_blank">google</a>
+
+<!-- table  -->
+<!-- table ,thead,tr--table row,th--table heading,tbody--table body,td---table body -->
+<table>
+  <thead>
+    <tr>
+      <th>Heading 1</th>
+      <th>Heading 2</th>
+      <th>Heading 3</th>
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- form tag  -->
+<form>
+  <!-- input for take users responce -->
+  <label for="username">username</label><br/>
+  <input type="text" id="username"/><br/><br/>
+
+  <!-- textArea is for taking multi line responce -->
+  <label for="about">About US</label><br/>
+  <textarea  id="about" ></textarea><br/><br/>
+
+  <!-- Dropdown control -->
+  <!-- selet,option -->
+  <!-- value attribute is used to pass data selected value to the  server -->
+  <label for="country">Country</label>
+  <select id="country">
+    <option value="india">India</option>
+    <option value="singaPore">SingaPore</option>
+    <option value="japan">Japan</option>
+  </select><br/><br/>
+
+  <!-- Radio Buttons -->
+  <label >Job Type</label><br/>
+  <input type="radio" name="jobtype" value="parttime" id="partime"/>
+  <label for="parttime">Part Time</label>
+  <input type="radio" name="jobtype" value="fulltime" id="fulltime"/>
+  <label for="fulltime">Full Time</label>
+  <br/><br/>
+
+  <!-- checkboxes task--to be done-->
+
+  <button >Submit</button>
+</form>
+
+
+</body>
+</html><!DOCTYPE html>
+<!-- Doctype --information about the page  -->
+<html>
+  <!-- html is the root element -->
+<head>
+  <!--head-- to specify the top level things -->
+  <!-- title--specifies the title of the page  -->
+<title>HTML learning</title>
+</head>
+<body>
+  <!-- Heading -->
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<!-- Paragraph -->
+<p>This is a Paragraph</p>
+<!-- for Displaying element ,usually starts from the next line -->
+<!-- Lorem30 -->
+<!-- br --is braek tag for line -->
+
+<!-- Text Formating -->
+
+<!-- strong --used for making text bold ,this is used to add importance to the tag-->
+<!-- em emphasis and i tag is used for making text italic  -->
+<!-- small--used to define smaller text -->
+<!-- mark tag-- is used to highlight the text -->
+<!-- delete tag --stripe through the line -->
+<!-- ins tag --used to underline the text -->
+<!-- sub --for subscript text -->
+<!-- sup for superscript text -->
+
+<p>Lorem ipsum dolor <strong>sit amet consectetur</strong> sit amet <ins>adipisicing </ins> elit. <mark>Temporibus earum commodi</mark> repudiandae  inventore <br/>
+  quia sed distinctio<i>minus sapiente necessitatibus</i>  
+  at error eveniet<small>incidunt id exercitationem</small> <del> autem aut tenetur itaque fugit!</del>
+Lorem ipsum dolor sit <sub>amet consectetur adipisicing elit. Sint</sub> placeat quasi sapiente eveniet id corporis<br/>s
+ saepe dolorum quia aut<sup> sit quaerat alias perferendis ex</sup>, eligendi pariatur, quibusdam impedit culpa. Similique.
+</p>
+
+<!-- Block and inline display -->
+<!-- block level element always takes up the new line an take the full width available -->
+<!-- inline element doesnt take a new line and take as much width available -->
+<div>Block1</div>
+<div>BLock2</div>
+
+<span>Inline1</span>
+<span>Inline2</span>
+
+<!-- List level elements -->
+<!-- unordered list--ul -->
+<!-- ol--ordered list -->
+<ul>
+  <li>red</li>
+  <li>blue</li>
+  <li>green</li>
+</ul>
+<ol>
+  <li>GBU</li>
+  <li>Gate no 5</li>
+  <li>Rahim hostel</li>
+</ol>
+
+<!-- description list --description of each term-->
+<!-- dl--defination list tag,dt--description defination,dd--description data -->
+<dl>
+  <dt>Ice cream </dt>
+  <dd>A soft cold food</dd>
+</dl>
+<dl>
+  <dt>Ice cream </dt>
+  <dd>A soft cold food</dd>
+</dl>
+
+
+<!-- html attributes ,table ,form-->
+<!-- htm attribute ---provide some additional information about the element -->
+<img src="/flat-code-logo-collection_23-2148829940.avif" height="200" width="200" alt="public"/>
+
+<!-- tag for linking different pages anchor tag -- -->
+<!-- target attribute is used to redirect to the different tab -->
+
+<a href="https://google.com" target="_blank">google</a>
+
+<!-- table  -->
+<!-- table ,thead,tr--table row,th--table heading,tbody--table body,td---table body -->
+<table>
+  <thead>
+    <tr>
+      <th>Heading 1</th>
+      <th>Heading 2</th>
+      <th>Heading 3</th>
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- form tag  -->
+<form>
+  <!-- input for take users responce -->
+  <label for="username">username</label><br/>
+  <input type="text" id="username"/><br/><br/>
+
+  <!-- textArea is for taking multi line responce -->
+  <label for="about">About US</label><br/>
+  <textarea  id="about" ></textarea><br/><br/>
+
+  <!-- Dropdown control -->
+  <!-- selet,option -->
+  <!-- value attribute is used to pass data selected value to the  server -->
+  <label for="country">Country</label>
+  <select id="country">
+    <option value="india">India</option>
+    <option value="singaPore">SingaPore</option>
+    <option value="japan">Japan</option>
+  </select><br/><br/>
+
+  <!-- Radio Buttons -->
+  <label >Job Type</label><br/>
+  <input type="radio" name="jobtype" value="parttime" id="partime"/>
+  <label for="parttime">Part Time</label>
+  <input type="radio" name="jobtype" value="fulltime" id="fulltime"/>
+  <label for="fulltime">Full Time</label>
+  <br/><br/>
+
+  <!-- checkboxes task--to be done-->
+
+  <button >Submit</button>
+</form>
+
+
+</body>
+</html>
+
+<!-- text property generally falls in two category 1)text styling, 2.)font styling -->
+<!-- font -family 1.)By default times new roman is the default font style and can change that by using font family property -->
+<!-- font style --web safe --backup fonts.
+sans-sarif is supported by all the browser
+-->
+<!-- font-weight -- for darkness of our font -->
+<!-- px rem %  -->
+<!-- text align -- center ,right ,left
+how is text align in its container
+-->
+<!-- line-height ---which sets the height of each line of the text
+line-height ==2 ,sets height twice of a font height
+-->
+<!-- letter spacing ,word spacing-->
+<!-- list-style-type effects the styling of our bullet points of list -->
+<!-- css positions, css grid -->
